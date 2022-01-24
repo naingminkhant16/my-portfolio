@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+
+    display: inline-block;
+    padding-bottom: 15px;
+    position: relative;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #272727;
+    right: 0;
+    margin: 0 auto;
+}
+.sub-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+a:active{
+    color: white;
+}
+.name{
+   font-size: 1.5rem;
+   letter-spacing: 0.4mm;
+}
+.email{
+    text-decoration: none;
+}
+.CV{
+    text-decoration: none;
+    background-color: #272727;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.CV:hover{
+    color: #272727;
+    background-color: rgba(197, 179, 179, 0.692);
+}
+.about-job{
+    border-left: 1px solid #272727;
+}
+.about-job:nth-child(1){
+    border: none;
+}
+.numbers{
+    font-size: 2.5rem;
+    text-align: center;
+}
+header {
+    background-color: #272727;
+    text-align: center;
+    color: #fff;
+}
+
+header .profile-container {
+    padding: 40px 0;
+}
+
+header .profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header .primary,
+i {
+    font-size: 1.3em;
+}
+
+/* what i do  */
+.whatIdo {
+    /* background: linear-gradient(rgba(128, 128, 128, 0.404), rgba(128, 128, 128, 0.404)), url('../img/vadim-kaipov-_6kI0qhmxc4-unsplash.jpg'); */
+    /* background-size: cover;
+    background-position: center; */
+    width: 100%;
+    /* height: 300px; */
+    text-align: center;
+    color: #272727;
+    /* margin: 40px auto; */
+    padding: 60px 0;
+
+}
+
+.whatIdo-container {}
+
+/* about  */
+.about {
+    /* margin: 40px 0; */
+    width: 100%;
+    background-color: #eee;
+    color: #272727;
+    padding: 60px 0;
+    text-align: center;
+}
+.about .container{
+    text-align: start !important;
+}
+
+.about img {
+    border-radius: 50%;
+}
+
+/* contact */
+.contact{
+    padding: 60px 0;
+    text-align: center;
+    /* background-color: #272727; */
+    color: #fff;
+}
+.contact .container{
+    text-align: start !important;
+}
+.contact .title::after{
+    border-bottom: 3px solid #fff !important;
+}
+@media screen and (max-width: 576px) {
+    .about-job:nth-child(1){
+        border-bottom: 1px solid #272727;  
+    }
+    .about-job:nth-child(2){
+        border-bottom: 1px solid #272727;  
+    }
+    .about-job:nth-child(3){
+        border: none;  
+    }
+  }
