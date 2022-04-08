@@ -15,7 +15,8 @@
     padding-bottom: 15px;
     position: relative;
 }
-.title::after{
+
+.title::after {
     content: "";
     position: absolute;
     width: 50%;
@@ -26,50 +27,55 @@
     right: 0;
     margin: 0 auto;
 }
-.sub-title{
+
+.sub-title {
     font-size: 1.5rem;
     font-weight: 700;
 }
-a:active{
+
+a:active {
     color: white;
 }
-.name{
-   font-size: 1.5rem;
-   letter-spacing: 0.4mm;
+
+.name {
+    font-size: 1.5rem;
+    letter-spacing: 0.4mm;
 }
-.email{
+
+.email {
     text-decoration: none;
 }
-.CV{
+
+.CV {
     text-decoration: none;
     background-color: #272727;
     color: #fff;
-    padding: 15px 30px;
-    border-radius: 20px;
+    /* padding: 15px 30px; */
+    /* border-radius: 10px; */
     transition: 0.5s ease-in-out;
 }
-.CV:hover{
-    color: #272727;
-    background-color: rgba(197, 179, 179, 0.692);
+
+.CV:hover {
+    color: #fff;
 }
-.about-job{
+
+.about-job {
     border-left: 1px solid #272727;
 }
-.about-job:nth-child(1){
+
+.about-job:nth-child(1) {
     border: none;
 }
-.numbers{
+
+.numbers {
     font-size: 2.5rem;
     text-align: center;
 }
+
 header {
     background-color: #272727;
     text-align: center;
     color: #fff;
-}
-
-header .profile-container {
-    padding: 40px 0;
 }
 
 header .profile {
@@ -87,32 +93,29 @@ i {
     font-size: 1.3em;
 }
 
-/* what i do  */
-.whatIdo {
-    /* background: linear-gradient(rgba(128, 128, 128, 0.404), rgba(128, 128, 128, 0.404)), url('../img/vadim-kaipov-_6kI0qhmxc4-unsplash.jpg'); */
-    /* background-size: cover;
-    background-position: center; */
-    width: 100%;
-    /* height: 300px; */
-    text-align: center;
-    color: #272727;
-    /* margin: 40px auto; */
-    padding: 60px 0;
-
+body {
+    overflow-x: hidden;
 }
 
-.whatIdo-container {}
+/* what i do  */
+.whatIdo {}
+
+.whatIdo .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s ease-in-out;
+}
+
+.whatIdo .card:hover {
+    transform: scale(1.04);
+}
 
 /* about  */
 .about {
-    /* margin: 40px 0; */
-    width: 100%;
-    background-color: #eee;
     color: #272727;
-    padding: 60px 0;
-    text-align: center;
+    background-color: #eee;
 }
-.about .container{
+
+.about .container {
     text-align: start !important;
 }
 
@@ -120,27 +123,104 @@ i {
     border-radius: 50%;
 }
 
+/* my projects  */
+.projects {}
+
+.projects .box {
+    border: 1px solid gold;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.projects .box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.609);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.projects .box-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.projects .box-img:hover .box-overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* img hover  */
+#art-img-container {
+    position: relative;
+}
+
+.art-img {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.67);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#art-img-container:hover .act-img {
+    opacity: 0.5;
+}
+
+#art-img-container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 32px;
+}
+
 /* contact */
-.contact{
+.contact {
     padding: 60px 0;
     text-align: center;
     /* background-color: #272727; */
     color: #fff;
 }
-.contact .container{
+
+.contact .container {
     text-align: start !important;
 }
-.contact .title::after{
+
+.contact .title::after {
     border-bottom: 3px solid #fff !important;
 }
+
 @media screen and (max-width: 576px) {
-    .about-job:nth-child(1){
-        border-bottom: 1px solid #272727;  
+    .about-job:nth-child(1) {
+        border-bottom: 1px solid #272727;
     }
-    .about-job:nth-child(2){
-        border-bottom: 1px solid #272727;  
+
+    .about-job:nth-child(2) {
+        border-bottom: 1px solid #272727;
     }
-    .about-job:nth-child(3){
-        border: none;  
+
+    .about-job:nth-child(3) {
+        border: none;
     }
-  }
+}
