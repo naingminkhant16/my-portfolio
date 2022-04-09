@@ -112,7 +112,7 @@ body {
 /* about  */
 .about {
     color: #272727;
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 
 .about .container {
@@ -124,26 +124,44 @@ body {
 }
 
 /* my projects  */
-.projects {}
+.projects{
+    /* background-color: #272727; */
+}
+/* .projects img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all .3s ease;
+}
 
-.projects .box {
+.projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+} */
+
+/* .projects .box {
     border: 1px solid gold;
     width: 300px;
     height: 200px;
     position: relative;
-    /* overflow: hidden; */
-}
+   
+} */
 
-.projects .box-overlay {
+/* .projects .box-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(128, 128, 128, 0.609);
     opacity: 0;
     transition: all 0.5s ease-in;
-}
+} */
 
-.projects .box-img {
+/* .projects .box-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -152,7 +170,7 @@ body {
 .projects .box-img:hover .box-overlay {
     opacity: 1;
     z-index: 1;
-}
+} */
 
 /* img hover  */
 #art-img-container {
@@ -193,6 +211,22 @@ body {
     color: #fff;
     font-size: 14px;
     padding: 20px 32px;
+}
+
+/* services  */
+.services {
+    background-color: #eee;
+}
+
+.services .card {
+    transition: 0.4s ease-in-out;
+    line-height: 2;
+}
+
+.services .card:hover {
+    background-color: #272727;
+    color: #fff;
+    transform: scale(1.04);
 }
 
 /* contact */
