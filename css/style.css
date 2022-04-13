@@ -8,7 +8,7 @@
 
 .title {
     font-size: 2.2rem;
-    font-weight:800;
+    font-weight: 800;
     margin-bottom: 40px;
     text-align: center;
 
@@ -27,6 +27,10 @@
     border-bottom: 3px solid #272727;
     right: 0;
     margin: 0 auto;
+}
+
+.active_nav {
+    color: #fff !important;
 }
 
 .sub-title {
@@ -123,104 +127,8 @@ body {
     border-radius: 50%;
 }
 
-/* my projects  */
-.projects{
-   background:url("../img/pjs.jpg") no-repeat center;
-   object-fit: cover;
-   background-size: cover;
-   background-attachment: fixed;
-}
-.projects .title{
-    color: #fff;
-}
-.projects .title::after {
-border-bottom:3px solid #fff;     
-}
-/* .projects img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all .3s ease;
-}
 
-.projects .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease;
-} */
 
-/* .projects .box {
-    border: 1px solid gold;
-    width: 300px;
-    height: 200px;
-    position: relative;
-   
-} */
-
-/* .projects .box-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(128, 128, 128, 0.609);
-    opacity: 0;
-    transition: all 0.5s ease-in;
-} */
-
-/* .projects .box-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.projects .box-img:hover .box-overlay {
-    opacity: 1;
-    z-index: 1;
-} */
-
-/* img hover  */
-#art-img-container {
-    position: relative;
-}
-
-.art-img {
-    opacity: 1;
-    display: block;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.67);
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#art-img-container:hover .act-img {
-    opacity: 0.5;
-}
-
-#art-img-container:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    color: #fff;
-    font-size: 14px;
-    padding: 20px 32px;
-}
 
 /* services  */
 .services {
@@ -228,7 +136,7 @@ border-bottom:3px solid #fff;
 }
 
 .services .card {
-    transition:all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     line-height: 2;
 }
 
@@ -238,21 +146,128 @@ border-bottom:3px solid #fff;
     transform: scale(1.04);
 }
 
+/* my skills  */
+.skills .skill {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills .html {
+    background-color: #e34c26;
+}
+
+.skills .css {
+    background-color: #2965f1;
+}
+
+.skills .js {
+    background-color: #f0db4f;
+}
+
+.skills .bootstrap {
+    background-color: #563d7c;
+}
+
+.skills .php {
+    background-color: #787CB5;
+}
+
+.skills .sql {
+    background-color: #f29111;
+}
+
+.skills .vue {
+    background-color: #41b883;
+}
+
+.skills .lara {
+    background-color: #f05340;
+}
+
+/* my projects  */
+.projects {
+    background: linear-gradient(to right, rgba(60, 60, 60, 0.4), rgba(60, 60, 60, 0.4)), url("../img/pjs.jpg") no-repeat center;
+    /* background-color: #eee; */
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.projects .title {
+    color: #fff;
+}
+
+.projects .title::after {
+    border-bottom: 3px solid #fff;
+}
+
+.projects .owl-item.active.center .card {
+    transform: scale(1.16);
+    opacity: 1;
+    /* background-color: #272727;
+    color: #fff;   */
+}
+
+.projects .owl-carousel .card {
+    background-color: #fff;
+    margin: 50px 15px 60px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
+    transform: scale(0.8);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.projects .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.projects .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
 /* contact */
 .contact {
-    background-color: #272727;
-    color: #fff;
+    background-color: #fff;
+    color: #272727;
 }
-.contact i{
-    color: #fff;
+
+.contact i {
+    color: #272727;
 }
-.contact i:hover{
+
+.contact i:hover {
     color: #777;
 }
 
-.contact .title::after {
-    border-bottom: 3px solid #fff !important;
+.upArrow {
+    padding: 8px;
+    border: 1px solid #272727;
+    background-color: #272727;
+    color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.upArrow:hover {
+    color: #272727;
+    background-color:transparent ;
+}
+/* .contact .title::after {
+    border-bottom: 3px solid #fff !important;
+} */
 
 @media screen and (max-width: 576px) {
     .about-job:nth-child(1) {
