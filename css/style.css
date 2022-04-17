@@ -1,11 +1,10 @@
-* {
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    overflow-y:auto;
-    overflow-x: hidden;
 }
 
 .title {
@@ -59,11 +58,13 @@ a:active {
     color: #fff;
     /* padding: 15px 30px; */
     /* border-radius: 10px; */
-    transition: 0.5s ease-in-out;
+    border: 1px solid #272727;
+    transition: all 0.3s ease-in-out;
 }
 
 .CV:hover {
-    color: #fff;
+    color: #272727;
+    background: transparent;
 }
 
 .about-job {
@@ -100,21 +101,6 @@ i {
     font-size: 1.3em;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-/* what i do  */
-
-.whatIdo .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.4s ease-in-out;
-}
-
-.whatIdo .card:hover {
-    transform: scale(1.04);
-}
-
 /* about  */
 .about {
     color: #272727;
@@ -128,9 +114,6 @@ body {
 .about img {
     border-radius: 50%;
 }
-
-
-
 
 /* services  */
 .services {
@@ -212,7 +195,7 @@ body {
 
 .projects .owl-carousel .card {
     background-color: #fff;
-    margin: 50px 15px 60px 15px;
+    margin: 50px 15px 20px 15px;
     border-radius: 5px;
     box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
     transform: scale(0.8);
@@ -251,7 +234,7 @@ body {
 }
 
 .upArrow {
-    padding: 8px;
+    padding: 6px;
     border: 1px solid #272727;
     background-color: #272727;
     color: #fff;
@@ -263,10 +246,17 @@ body {
     cursor: pointer;
 }
 
+.contact .send {
+    border: 1px solid #272727;
+    color: #272727;
+    background: transparent;
+}
+
 .upArrow:hover {
     color: #272727;
-    background-color:transparent ;
+    background-color: transparent;
 }
+
 /* .contact .title::after {
     border-bottom: 3px solid #fff !important;
 } */

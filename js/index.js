@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let skills = document.querySelector('#skills').offsetTop;
         let projects = document.querySelector('#projects').offsetTop;
         let contact = document.querySelector('#contact').offsetTop;
-      
+
         let sh = this.window.scrollY;
-      
+
         if (sh >= 0 && sh < about - 100) this.document.getElementById('home_nav').classList.add('active_nav');
         else this.document.getElementById('home_nav').classList.remove('active_nav');
 
