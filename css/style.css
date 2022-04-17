@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 
 .title {
