@@ -171,26 +171,26 @@ i {
 
 /* my projects  */
 .projects {
-    background: linear-gradient(to right, rgba(60, 60, 60, 0.4), rgba(60, 60, 60, 0.4)), url("../img/pjs.jpg") no-repeat center;
-    /* background-color: #eee; */
-    object-fit: cover;
+    /* background: linear-gradient(to right, rgba(60, 60, 60, 0.4), rgba(60, 60, 60, 0.4)), url("../img/pjs.jpg") no-repeat center; */
+    background-color: #eee;
+    /* object-fit: cover;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
-.projects .title {
+/* .projects .title {
     color: #fff;
 }
 
 .projects .title::after {
     border-bottom: 3px solid #fff;
-}
+} */
 
 .projects .owl-item.active.center .card {
     transform: scale(1.16);
     opacity: 1;
-    /* background-color: #272727;
-    color: #fff;   */
+    /* background-color: #272727; */
+    /* color: #fff;   */
 }
 
 .projects .owl-carousel .card {
@@ -201,6 +201,7 @@ i {
     transform: scale(0.8);
     opacity: 0.5;
     transition: all 0.3s;
+    padding: 3px;
 }
 
 .projects .owl-nav .owl-next {

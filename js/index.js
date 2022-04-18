@@ -7,8 +7,8 @@ $(document).ready(function () {
         smartSpeed: 450,
         nav: true,
         navText: [
-            "<i class='fas fa-angle-left text-light fs-1'></i>",
-            "<i class='fas fa-angle-right text-light fs-1'></i>"
+            "<i class='fas fa-angle-left text-dark fs-1'></i>",
+            "<i class='fas fa-angle-right text-dark fs-1'></i>"
         ],
         center: true,
         responsive: {
