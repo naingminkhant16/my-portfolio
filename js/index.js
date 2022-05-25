@@ -75,4 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
             upArrow.style.display = 'block';
         }
     }
-})
+});
+
+ScrollReveal().reveal(".content ", {
+    distance: '600%',
+    origin: 'left',
+    // duration: 700,
+    interval: 200,
+    opacity: null,
+    delay: 200,
+    // reset: true
+});
