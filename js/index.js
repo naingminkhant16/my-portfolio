@@ -1,3 +1,9 @@
+function hideOffCanvas() {
+    setTimeout(() => {
+        document.getElementById('btn-close').click();
+    }, 500)
+}
+
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -28,6 +34,12 @@ $(document).ready(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    let home_btn = document.getElementById('home_nav');
+    let about_btn = document.getElementById('about_nav');
+    let services_btn = document.getElementById('services_nav');
+    let skills_btn = document.getElementById('skills_nav');
+    let projects_btn = document.getElementById('projects_nav');
+    let contact_btn = document.getElementById('contact_nav');
 
     window.addEventListener('scroll', function () {
         // let home = document.querySelector('#intro_home').offsetTop;
@@ -39,23 +51,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let sh = this.window.scrollY;
 
-        if (sh >= 0 && sh < about - 100) this.document.getElementById('home_nav').classList.add('active_nav');
-        else this.document.getElementById('home_nav').classList.remove('active_nav');
+        if (sh >= 0 && sh < about - 100) home_btn.classList.add('active_nav');
+        else home_btn.classList.remove('active_nav');
 
-        if (sh >= about - 100 && sh < services - 100) this.document.getElementById('about_nav').classList.add('active_nav');
-        else this.document.getElementById('about_nav').classList.remove('active_nav');
+        if (sh >= about - 100 && sh < services - 100) about_btn.classList.add('active_nav');
+        else about_btn.classList.remove('active_nav');
 
-        if (sh >= services - 100 && sh < skills - 100) this.document.getElementById('services_nav').classList.add('active_nav');
-        else this.document.getElementById('services_nav').classList.remove('active_nav');
+        if (sh >= services - 100 && sh < skills - 100) services_btn.classList.add('active_nav');
+        else services_btn.classList.remove('active_nav');
 
-        if (sh >= skills - 100 && sh < projects - 100) this.document.getElementById('skills_nav').classList.add('active_nav');
-        else this.document.getElementById('skills_nav').classList.remove('active_nav');
+        if (sh >= skills - 100 && sh < projects - 100) skills_btn.classList.add('active_nav');
+        else skills_btn.classList.remove('active_nav');
 
-        if (sh >= projects - 100 && sh < contact - 150) this.document.getElementById('projects_nav').classList.add('active_nav');
-        else this.document.getElementById('projects_nav').classList.remove('active_nav');
+        if (sh >= projects - 100 && sh < contact - 150) projects_btn.classList.add('active_nav');
+        else projects_btn.classList.remove('active_nav');
 
-        if (sh >= contact - 150) this.document.getElementById('contact_nav').classList.add('active_nav');
-        else this.document.getElementById('contact_nav').classList.remove('active_nav');
+        if (sh >= contact - 150) contact_btn.classList.add('active_nav');
+        else contact_btn.classList.remove('active_nav');
 
         scrollTopbtnShowHide()
     })
@@ -75,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             upArrow.style.display = 'block';
         }
     }
+
 });
 
 ScrollReveal().reveal(".content ", {
