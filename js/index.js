@@ -82,20 +82,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function scrollTopbtnShowHide() {
         if (document.documentElement.scrollTop <= 150) {
-            upArrow.style.display = 'none';
+            upArrow.classList.add('d-none');
         } else {
-            upArrow.style.display = 'block';
+            upArrow.classList.remove('d-none');
+            upArrow.classList.add("animate__slideInUp");
         }
     }
 
 });
 
 ScrollReveal().reveal(".content ", {
-    distance: '600%',
-    origin: 'left',
+    distance: '100%',
+    origin: 'bottom',
     // duration: 700,
     interval: 200,
-    opacity: null,
+    opacity: 0,
     delay: 200,
     // reset: true
 });

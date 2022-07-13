@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="icon" href="img/batman.jpg">
-    <!-- bootstrap  -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <!-- CSS only -->
     <link rel="stylesheet" href="css/style.css">
     <!-- fonts  -->
@@ -23,6 +22,8 @@
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
     <!-- animate css  -->
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
             <div class="offcanvas offcanvas-start d-lg-none bg-dark" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                     <button type="button" id="btn-close" class="btn-close" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -113,9 +114,10 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="">
-                            <h4 class="sub-title mb-3 content">I'm called <span class="name">Naing Min
+                            <h4 class="sub-title mb-3 content">I'm <span class="name">Naing Min
                                     Khant</span>(Junior Web
                                 Developer)</h4>
+                            <hr>
                             <div class="content">
                                 <p style="text-align: justify;">I'm 20 yrs old junior web developer who
                                     currently learning
@@ -149,20 +151,20 @@
                             <hr>
                             <p><span class="fw-bold">From : </span>South Okkalapa Township, Yangon,
                                 Myanmar</p><br>
-                            <a href="file/CV form.docx" class="CV btn fw-bold" download>Download CV</a>
+                            <a href="file/CV form.docx" class="btn btn-dark fw-bold" download>Download CV</a>
                         </div>
                     </div>
                 </div><br>
                 <div class="row row-cols-2 row-cols-sm-4 mt-3">
                     <div class="col about-job">
                         <div class="content">
-                            <div class="numbers">0</div>
+                            <div class="numbers">1</div>
                             <p class="text-center">Years Experiance</p>
                         </div>
                     </div>
                     <div class="col about-job">
                         <div class="content">
-                            <div class="numbers">0</div>
+                            <div class="numbers">2</div>
                             <p class="text-center">Clients</p>
                         </div>
                     </div>
@@ -250,7 +252,7 @@
         <div class="container text-center mt-5 mb-5">
             <h1 class="title content">My Services</h1>
             <div class="row g-3 mt-2">
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="content">
                         <div class="card">
                             <div class="card-body">
@@ -263,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-4">
+                <!-- <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <i class="fab fa-js-square fs-1 mb-3"></i>
@@ -274,7 +276,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="content">
                         <div class="card">
                             <div class="card-body">
@@ -287,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-lg-4">
                     <div class="content">
                         <div class="card">
                             <div class="card-body">
@@ -408,7 +410,7 @@
                     </div>
                 </div> -->
                 <div class="col-md-6">
-                    <div class="row">
+                    <div class="row content">
                         <div class="col-12">
                             <div class="d-flex justify-content-between justify-content-md-evenly mb-3">
                                 <i class="fa-brands fa-html5 display-4"></i>
@@ -420,7 +422,7 @@
                         <div class="col-12">
                             <div class="d-flex justify-content-between justify-content-md-evenly ">
                                 <i class="fa-brands fa-css3-alt display-4"></i>
-                                <i class="fa-solid fa-database display-4"></i>
+                                <i class="fa-solid fa-database fs-1 mt-2"></i>
                                 <i class="fa-brands fa-laravel display-4"></i>
                                 <i class="fa-brands fa-vuejs display-4"></i>
                             </div>
@@ -437,9 +439,12 @@
             <div class="content">
                 <div class="owl-carousel owl-theme">
                     <div class="card">
-                        <img src="./img/portfolio.png" alt="">
-                        <div class="card-title mt-2" style="font-size: 14px;">Portfolio Website For Company
-                            Information.</div>
+                        <a href="https://naingminkhant16.github.io/internPJ1/index.html"
+                            class="text-decoration-none text-black-50">
+                            <img src="./img/portfolio.png" alt="">
+                            <div class="card-title mt-2" style="font-size: 14px;">Portfolio Website For Company
+                                Information.</div>
+                        </a>
                     </div>
                     <div class="card">
                         <img src="./img/edusite.png" alt="">
@@ -462,9 +467,31 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/gold.png" alt="">
-                        <div class="card-title mt-2" style="font-size: 14px;">Gold Price Calculator in terms of
-                            Burma.</div>
+                        <a href="https://naingminkhant16.github.io/gold-price-calculator/"
+                            class="text-decoration-none text-black-50">
+                            <img src="./img/gold.png" alt="">
+                            <div class="card-title mt-2" style="font-size: 14px;">Gold Price Calculator in terms of
+                                Burma.</div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://foodie-b5-nmk.netlify.app/" class="text-decoration-none text-black-50">
+                            <img src="./img/b5-foodie.png" alt="">
+                            <div class="card-title mt-2" style="font-size: 14px;">Bootstrap 5 Template Foodie Project
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://invoice-vue.netlify.app/" class="text-decoration-none text-black-50">
+                            <img src="./img/invoice-vue.png" alt="">
+                            <div class="card-title mt-2" style="font-size: 14px;">Invoice App With VueJs
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <img src="./img/lara-blog.png" alt="">
+                        <div class="card-title mt-2" style="font-size: 14px;">Blog CRUD with Laravel
+                        </div>
                     </div>
                 </div>
             </div>
@@ -526,7 +553,8 @@
             </div>
         </div>
     </div>
-    <a class="upArrow" id="upArrow"><i class="fas fa-angle-up" style="font-size:20px"></i></a>
+    <a class="upArrow d-none btn btn-sm btn-dark animate__animated " id="upArrow">
+        <i class="fas fa-angle-up"></i></a>
     <!-- footer  -->
     <footer class="bg-dark p-2">
         <p class="text-light text-center">Copy right @ 2022, Created by Naing Min Khant</p>

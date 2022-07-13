@@ -235,16 +235,17 @@ i {
 }
 
 .upArrow {
-    padding: 6px;
+    /* padding: 6px;
     border: 1px solid #272727;
     background-color: #272727;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 5px; */
     position: fixed;
     right: 30px;
     bottom: 30px;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s all ease-in-out;
 }
 
 .contact .send {
@@ -252,15 +253,6 @@ i {
     color: #272727;
     background: transparent;
 }
-
-.upArrow:hover {
-    color: #272727;
-    background-color: transparent;
-}
-
-/* .contact .title::after {
-    border-bottom: 3px solid #fff !important;
-} */
 
 @media screen and (max-width: 576px) {
     .about-job:nth-child(1) {
